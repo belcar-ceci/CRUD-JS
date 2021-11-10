@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="list"></ul>
+    <input type="text" name="newTodo" id="newTodo">
+
+    <button onclick="addTodo(newTodo)">Add</button>
+
+    <div id="edit-box" >
+        <form action="javascript:void(0);" method="POST" id="save-edit">
+            <input type="text" id="editar-todo">
+            <input type="submit" value="Save" class="btn btn-success"/> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+        </form>
+        
+    </div>
+    
+    <script src="./crud.js"></script>
+</body>
+</html>
